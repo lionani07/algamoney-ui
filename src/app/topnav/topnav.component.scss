@@ -8,12 +8,15 @@
 }
 .nav-brand {
     width: 215px;
-    text-align: center;
+    text-align: left;
 }
-.topnav-icon {
-    text-decoration: none;
-    display: flex;
-    color: #fff;
+
+.icon-spacer {
+    width: 5px;
+}
+
+.nav-spacer {
+    flex: 1 1 auto;
 }
 
 .nav-spacer {
