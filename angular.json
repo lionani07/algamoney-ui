@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material-template-lio": {
+    "algamoney-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/material-template-lio",
+            "outputPath": "dist/algamoney-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "material-template-lio:build:production"
+              "browserTarget": "algamoney-ui:build:production"
             },
             "development": {
-              "browserTarget": "material-template-lio:build:development"
+              "browserTarget": "algamoney-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material-template-lio:build"
+            "browserTarget": "algamoney-ui:build"
           }
         },
         "test": {
@@ -109,5 +109,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "material-template-lio"
+  "defaultProject": "algamoney-ui"
 }
