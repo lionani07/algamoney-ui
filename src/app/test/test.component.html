@@ -1,0 +1,22 @@
+<div class="mb-20" fxLayout="row">
+    <h4>Funcionarios: {{funcionarios.length}}</h4>
+</div>
+
+<mat-card *ngIf="funcionarioAdd" class="mb-20">Funcionario {{ nome }} adicionado</mat-card>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)] = "nome" (focus)="funcionarioAdd = false">
+</mat-form-field>
+
+<div class="example-button-row mb-20" >
+    <button mat-raised-button color="primary" (click)="add()" [disabled]="nome.length == 0">Add</button>
+</div>
+
+<div fxLayout="row wrap" fxLayout.xs="column wrap">  
+    
+    <div fxFlex.gt-xs="20" *ngFor="let funcionario of funcionarios; let i = index">
+        <app-funcionario-card [funcionario]="funcionario" [i] = "i"></app-funcionario-card>
+    </div> 
+
+</div>
